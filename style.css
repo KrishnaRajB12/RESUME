@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#111;
+    font-family:Georgia, serif;
+}
+
+.poster{
+    position:relative;
+    width:700px;
+    height:1000px;
+    overflow:hidden;
+    background:
+    radial-gradient(circle at 50% 20%, #28446d 0%, #11233e 35%, #07111e 70%, #02060c 100%);
+}
+
+/* Moon */
+
+.moon{
+    position:absolute;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:#fff9dc;
+    top:90px;
+    left:50%;
+    transform:translateX(-50%);
+    box-shadow:
+    0 0 40px #fff5b0,
+    0 0 120px rgba(255,240,170,.4);
+}
+
+/* Stars */
+
+.stars{
+    position:absolute;
+    inset:0;
+    background-image:
+    radial-gradient(#fff 1px, transparent 1px),
+    radial-gradient(#ddd 1px, transparent 1px);
+    background-size:90px 90px,140px 140px;
+    opacity:.4;
+}
+
+/* Ship */
+
+.ship{
+    position:absolute;
+    bottom:280px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.boat{
+    width:170px;
+    height:28px;
+    background:#111;
+    border-radius:0 0 80px 80px;
+}
+
+.mast{
+    position:absolute;
+    width:6px;
+    height:130px;
+    background:#111;
+    left:82px;
+    bottom:25px;
+}
+
+.sail{
+    position:absolute;
+    width:0;
+    height:0;
+    border-left:0 solid transparent;
+    border-right:80px solid transparent;
+    border-bottom:110px solid rgba(255,255,255,.9);
+    left:5px;
+    bottom:60px;
+}
+
+/* Water */
+
+.water{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:300px;
+    background:
+    repeating-linear-gradient(
+    -5deg,
+    #071524 0px,
+    #0d2438 6px,
+    #14344e 12px,
+    #071524 18px
+    );
+}
+
+/* Text */
+
+.content{
+    position:absolute;
+    bottom:60px;
+    width:100%;
+    text-align:center;
+    color:white;
+}
+
+.coming{
+    color:#d8b15f;
+    letter-spacing:8px;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:110px;
+    letter-spacing:12px;
+    color:#f4d47b;
+    text-shadow:
+    0 0 10px rgba(255,210,90,.5),
+    0 0 30px rgba(255,210,90,.25);
+}
+
+.tagline{
+    margin-top:20px;
+    font-size:24px;
+    line-height:1.6;
+    color:#ddd;
+    font-style:italic;
+}
+
+.line{
+    width:220px;
+    height:2px;
+    background:#d8b15f;
+    margin:40px auto;
+}
+
+.credits{
+    font-size:13px;
+    letter-spacing:5px;
+    color:#bbb;
+}
